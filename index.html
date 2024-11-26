@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div{
+            display: flex;
+            gap: 10px;
+            border: 2px solid;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: black;
+        }
+        .div div{
+            border: 2px solid red;
+            height: 100px;
+            width: 280px;
+            border-radius: 10px;
+        }
+        @media screen and (min-width:0px) and (max-width:300px) {
+            .div1{
+                background-image: url(th.jpeg);
+            }
+            .div2{
+                background-color: blue;
+            }
+            .div3{
+                background-color: brown;
+            }  
+        }
+        @media screen and (min-width:301px) and (max-width:400px) {
+            .div1{
+                background-color: greenyellow;
+            }
+            .div2{
+                background-image: url(th.jpeg);
+            }
+            .div3{
+                background-color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+    </div>
+</body>
+</html>
